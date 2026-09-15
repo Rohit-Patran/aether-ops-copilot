@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AetherOps // AI Incident Copilot & Automated Runbook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              surface: {
+                950: '#06080d',
+                900: '#0b0f19',
+                800: '#111827',
+                700: '#1f2937',
+                600: '#374151'
+              },
+              accent: {
+                cyan: '#06b6d4',
+                purple: '#a855f7',
+                emerald: '#10b981',
+                rose: '#f43f5e'
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-[#06080d] text-slate-100 antialiased font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
