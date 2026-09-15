@@ -27,7 +27,8 @@ export default function App() {
       return;
     }
 
-    await startStream('/api/ai/diagnose', {
+    const API_BASE = import.meta.env.VITE_API_BASE_URL;
+    await startStream(`${API_BASE}/api/ai/diagnose`, {
       nodeRef: selectedNode.id,
       query: promptQuery
     });
